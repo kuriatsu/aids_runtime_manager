@@ -14,10 +14,16 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    scenario_check.cpp
+    scenario_check.cpp \
+    rotate_image.cpp \
+    find_closest_waypoint.cpp
 
 HEADERS  += mainwindow.h \
-    scenario_check.h
+    scenario_check.h \
+    rotate_image.h \
+    find_closest_waypoint.h
 
 FORMS    += mainwindow.ui \
-    scenario_check.ui
+    scenario_check.ui \
+    rotate_image.ui \
+    find_closest_waypoint.ui
