@@ -10,17 +10,21 @@ namespace Ui {
 class ScenarioCheck;
 }
 
-struct Params {
-    QString checkpoint;
-    QString scenario;
-    QString output;
-    QString error_list;
-    double checkpoint_size;
-    double right_position_thres;
-    double right_short_cut_thres;
-    double left_position_thres;
-    double left_big_swing_thres;
-};
+namespace ScenarioCheckParams
+{
+    struct Params {
+        QString checkpoint;
+        QString scenario;
+        QString output;
+        QString error_list;
+        double checkpoint_size;
+        double right_position_thres;
+        double right_short_cut_thres;
+        double left_position_thres;
+        double left_big_swing_thres;
+    };
+}
+
 
 class ScenarioCheck : public QWidget
 {
@@ -29,8 +33,8 @@ class ScenarioCheck : public QWidget
 public:
     explicit ScenarioCheck(QWidget *parent = 0);
     ~ScenarioCheck();
-    Params current_param;
-    Params new_param;
+    ScenarioCheckParams::Params current_param;
+    ScenarioCheckParams::Params new_param;
     void start();
     void stop();
 

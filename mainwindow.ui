@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>650</width>
-    <height>423</height>
+    <width>649</width>
+    <height>451</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -156,7 +156,7 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>594</width>
+             <width>593</width>
              <height>386</height>
             </rect>
            </property>
@@ -809,8 +809,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>594</width>
-             <height>298</height>
+             <width>607</width>
+             <height>314</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_11">
@@ -904,10 +904,10 @@
                   </property>
                  </widget>
                 </item>
-                <item row="3" column="0">
-                 <widget class="QPushButton" name="pushButton_16">
+                <item row="5" column="0">
+                 <widget class="QPushButton" name="pushButton_17">
                   <property name="text">
-                   <string>Trafficlight Detect</string>
+                   <string>Trafficlight Timer</string>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -924,16 +924,6 @@
                   </property>
                  </widget>
                 </item>
-                <item row="4" column="0">
-                 <widget class="QPushButton" name="pushButton_17">
-                  <property name="text">
-                   <string>Trafficlight Timer</string>
-                  </property>
-                  <property name="checkable">
-                   <bool>true</bool>
-                  </property>
-                 </widget>
-                </item>
                 <item row="3" column="1">
                  <widget class="QToolButton" name="toolButton_8">
                   <property name="text">
@@ -941,10 +931,40 @@
                   </property>
                  </widget>
                 </item>
-                <item row="4" column="1">
+                <item row="5" column="1">
                  <widget class="QToolButton" name="toolButton_9">
                   <property name="text">
                    <string>...</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QPushButton" name="pushButton_16">
+                  <property name="text">
+                   <string>Trafficlight Detect</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QToolButton" name="toolButton_10">
+                  <property name="text">
+                   <string>...</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QPushButton" name="pushButton_18">
+                  <property name="accessibleDescription">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;find closest HDMap candidates&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="text">
+                   <string>Closest HDMap</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>true</bool>
                   </property>
                  </widget>
                 </item>
@@ -1076,7 +1096,7 @@
               <item>
                <layout class="QGridLayout" name="gridLayout_7">
                 <item row="1" column="0">
-                 <widget class="QPushButton" name="pushButton_8">
+                 <widget class="QPushButton" name="collision_run">
                   <property name="text">
                    <string>Collision</string>
                   </property>
@@ -1086,7 +1106,7 @@
                  </widget>
                 </item>
                 <item row="3" column="0">
-                 <widget class="QPushButton" name="pushButton_14">
+                 <widget class="QPushButton" name="off_wheel_run">
                   <property name="text">
                    <string>Off Wheel</string>
                   </property>
@@ -1096,14 +1116,14 @@
                  </widget>
                 </item>
                 <item row="2" column="1">
-                 <widget class="QToolButton" name="whiteline_pause_tool">
+                 <widget class="QToolButton" name="lane_change_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QToolButton" name="indicator_tool">
+                 <widget class="QToolButton" name="collision_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
@@ -1120,21 +1140,21 @@
                  </widget>
                 </item>
                 <item row="0" column="1">
-                 <widget class="QToolButton" name="toolButton_7">
+                 <widget class="QToolButton" name="steering_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
                  </widget>
                 </item>
                 <item row="3" column="1">
-                 <widget class="QToolButton" name="trafficlight_tool">
+                 <widget class="QToolButton" name="off_wheel_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
                  </widget>
                 </item>
                 <item row="2" column="0">
-                 <widget class="QPushButton" name="pushButton_10">
+                 <widget class="QPushButton" name="lane_change_run">
                   <property name="text">
                    <string>Lane Change</string>
                   </property>
@@ -1185,23 +1205,23 @@
               <item>
                <layout class="QGridLayout" name="gridLayout_10">
                 <item row="3" column="1">
-                 <widget class="QToolButton" name="toolButton_4">
+                 <widget class="QToolButton" name="pause_whiteline_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
                  </widget>
                 </item>
                 <item row="1" column="1">
-                 <widget class="QToolButton" name="steering_tool">
+                 <widget class="QToolButton" name="indicator_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
                  </widget>
                 </item>
                 <item row="2" column="0">
-                 <widget class="QPushButton" name="pushButton_15">
+                 <widget class="QPushButton" name="pause_stopline_run">
                   <property name="text">
-                   <string>Stop Line Pause</string>
+                   <string>Pause Stopline</string>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -1209,16 +1229,16 @@
                  </widget>
                 </item>
                 <item row="2" column="1">
-                 <widget class="QToolButton" name="toolButton_3">
+                 <widget class="QToolButton" name="pause_stopline_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
                  </widget>
                 </item>
                 <item row="3" column="0">
-                 <widget class="QPushButton" name="whiteline_pause_run">
+                 <widget class="QPushButton" name="pause_whiteline_run">
                   <property name="text">
-                   <string>Whiteline Pause</string>
+                   <string>Pause Whiteline</string>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -1236,9 +1256,9 @@
                  </widget>
                 </item>
                 <item row="4" column="0">
-                 <widget class="QPushButton" name="trafficlight_run">
+                 <widget class="QPushButton" name="follow_trafficlight_run">
                   <property name="text">
-                   <string>Trafficlight Violence</string>
+                   <string>Follow Trafficlight</string>
                   </property>
                   <property name="checkable">
                    <bool>true</bool>
@@ -1246,7 +1266,7 @@
                  </widget>
                 </item>
                 <item row="4" column="1">
-                 <widget class="QToolButton" name="toolButton_6">
+                 <widget class="QToolButton" name="follow_trafficlight_tool">
                   <property name="text">
                    <string>...</string>
                   </property>
@@ -1552,7 +1572,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>650</width>
+     <width>649</width>
      <height>19</height>
     </rect>
    </property>
