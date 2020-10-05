@@ -19,7 +19,7 @@ public:
     void start();
     void stop();
 
-private slots:
+private Q_SLOTS:
     void on_add_clicked();
 
     void on_remove_clicked();

@@ -28,7 +28,7 @@ public:
     FindClosestWaypointParams::Params current_param;
     FindClosestWaypointParams::Params new_param;
 
-private slots:
+private Q_SLOTS:
     void on_search_thres_valueChanged(double arg1);
 
 

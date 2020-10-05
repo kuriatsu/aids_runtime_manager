@@ -38,7 +38,7 @@ public:
     void start();
     void stop();
 
-private slots:
+private Q_SLOTS:
     void on_checkpoint_tool_clicked();
 
     void on_error_list_tool_clicked();
@@ -63,7 +63,7 @@ private:
     Ui::ScenarioCheck *ui;
     QProcess process;
 
-signals:
+Q_SIGNALS:
     void checkpoint_file_selected(QString filename);
     void error_list_file_selected(QString filename);
     void scenario_file_selected(QString filename);

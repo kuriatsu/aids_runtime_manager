@@ -19,7 +19,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-private slots:
+private Q_SLOTS:
 
     void on_scenario_check_tool_clicked();
     void on_scenario_check_run_clicked(bool checked);

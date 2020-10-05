@@ -131,7 +131,7 @@
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QWebView" name="webView">
+         <widget class="QWebEngineView" name="webView">
           <property name="url">
            <url>
             <string>localhost:9000</string>
@@ -1355,7 +1355,7 @@
          </layout>
         </item>
         <item>
-         <widget class="QWebView" name="webView_2">
+         <widget class="QWebEngineView" name="webView_2">
           <property name="url">
            <url>
             <string>about:blank</string>
@@ -1636,9 +1636,9 @@
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>QWebView</class>
+   <class>QWebEngineView</class>
    <extends>QWidget</extends>
-   <header>QtWebKitWidgets/QWebView</header>
+   <header>QtWebEngineWidgets/QWebEngineView</header>
   </customwidget>
  </customwidgets>
  <resources/>
