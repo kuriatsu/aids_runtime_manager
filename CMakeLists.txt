@@ -5,7 +5,7 @@ project(runtime_manager)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOUIC ON) # .ui to header
 
 set(CMAKE_CXX_STANDARD 11)
 
